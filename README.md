@@ -1,7 +1,7 @@
 # Color Detection with Serverless Architecture
-This project is about to detect the color of given object using Tcs3200 color detection sensor using a serverless Nuclio function to send and receive MQTT data messages in which ESP8266 is being used as a client and a java application as a consumer. For color detection, I’m detecting only 3 colors i.e. Red, Green and Blue as the sensor gives the color data in RGB values. The MQTT data messages is sending through ESP8266 from the sensor to the RabbitMQ queues. In the end, a java application is receiving the MQTT messages which are invoking by a nuclio function.
+This project is about to detect the color of given object by using Tcs3200 color detection sensor with a serverless Nuclio function to send and receive MQTT data messages in which ESP8266 is being used as a client and a java application as a consumer. For color detection, I’m detecting only 3 colors i.e. Red, Green and Blue as the sensor gives the color data in RGB values. The MQTT data messages is sending through ESP8266 from the sensor to the RabbitMQ queues. In the end, a java application is receiving the MQTT messages which are invoking by a nuclio function.
 
-Color detection is very useful in different domain of industries, especially if we have a robust serveless arachitecture, so it can be easily monitored for identifying and counting the objects by using different color codes. It can be used in the following domain;
+Color detection is very useful in different domain of industries, especially if we have a robust serveless architecture, so it can be easily monitored for identifying and counting the objects by using different color codes. It can be used in the following domain;
 
 1) Textile industries
 2) Vegatables and fruits storage companies
