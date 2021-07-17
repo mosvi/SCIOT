@@ -97,3 +97,6 @@ $ docker run -p 9000:15672  -p 1883:1883 -p 5672:5672  cyrilix/rabbitmq-mqtt
 ```
 
 Browse to http://localhost:9000, and login using username: guest and password: guest, to access to the RabbitMQ managment, where is possible to visualize the message queues and the broker status.
+
+----------------------------------------------------------------------------------------------------------------------------
+Once the configuration of the project is completed; import [mqttconsume.yaml](https://github.com/mosvi/SCIOT/blob/main/mqttconsume.yaml) file in nulcio to create function and deploy it. After successfully deployed, connect sensor to ESP8266 and run [ColorDetection.ino](https://github.com/mosvi/SCIOT/blob/main/ColorDetection.ino) file in Arduino IDE to send detected color messages to RabbitMQ queues & import [Java Client](https://github.com/mosvi/SCIOT/tree/main/rabbitmq-java-client-mvn) in IntelliJ IDEA, build and run it to receive MQTT messages.
